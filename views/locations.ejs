@@ -1,17 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Locations - Eldoret City Center Parking</title>
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="shortcut icon" href="images/3.png" type="image/x-icon">
-</head>
-<body>
-   <%- include("_header.ejs") %>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/locations.css" />
+    <link rel="shortcut icon" href="images/3.png" type="image/x-icon" />
+  </head>
+  <body>
+    <%- include("_header.ejs") %>
     <main>
-        <h1> Where are you? </h1>
+      <section class="locations">
+        <h1>Parking Locations in Eldoret City</h1>
+        <ul id="parking-locations">
+          <li>
+            <a href="/spaces?location=town_centre">Eldoret Town Centre</a>
+          </li>
+          <li>
+            <a href="/spaces?location=university"
+              >Eldoret University Main Campus</a
+            >
+          </li>
+          <li>
+            <a href="/spaces?location=moi_stadium"
+              >Moi International Sports Centre, Eldoret</a
+            >
+          </li>
+          <li>
+            <a href="/spaces?location=westside_mall">Westside Mall Eldoret</a>
+          </li>
+          <li>
+            <a href="/spaces?location=airport">Eldoret International Airport</a>
+          </li>
+          <li>
+            <a href="/spaces?location=rupa">Rupa's Mall Eldoret</a>
+          </li>
+        </ul>
+      </section>
     </main>
     <%- include("_footer.ejs") %>
-</body>
+  </body>
 </html>
